@@ -36,10 +36,10 @@ export default function PulseTimer() {
 
   const handleReset = () => {
     setIsRunning(false);
-    setTimeLeft(8 * 60 * 60); // Reset to initial value
+    setTimeLeft(6 * 60 * 60); // Reset to initial value
   };
 
-  const totalDuration = 8 * 60 * 60; // Total duration in seconds
+  const totalDuration = 6 * 60 * 60; // Total duration in seconds
   const progress = 1 - timeLeft / totalDuration; // Progress as a fraction
   const circleRadius = 90; // Radius of the SVG circle
   const circleCircumference = 2 * Math.PI * circleRadius;
